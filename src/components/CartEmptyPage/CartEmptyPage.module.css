@@ -1,0 +1,46 @@
+.containerCover {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: "Poppins", sans-serif;
+  height: 100vh;
+}
+.container {
+  width: 40%;
+  height: 500px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.container > * {
+  margin-bottom: 10px;
+}
+.container h2 {
+  font-weight: 500;
+}
+.container h4 {
+  font-weight: 300;
+}
+.imageDiv {
+  width: 100%;
+  background-color: rgb(143, 17, 38);
+  display: flex;
+  justify-content: center;
+  margin: 50px 0;
+}
+.imageDiv img {
+  width: 100%;
+  height: auto;
+  max-width: 40%;
+}
+.nearYou {
+  margin-top: 20px;
+  padding: 10px;
+  background-color: rgb(206, 69, 19);
+  color: white;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+}

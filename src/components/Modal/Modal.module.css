@@ -1,0 +1,29 @@
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.modal {
+  position: fixed;
+  width: 30%;
+  padding: 1rem;
+  /* height: 200px; */
+  margin: 0 auto;
+  background-color: blueviolet;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.buttonDiv {
+  width: 90%;
+  display: flex;
+  justify-content: space-around;
+}

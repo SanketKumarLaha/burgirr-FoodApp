@@ -1,0 +1,103 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+.cartContainerCover {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: "Poppins", sans-serif;
+  height: 100vh;
+}
+.cartContainer {
+  background-color: white;
+  width: 500px;
+  height: 500px;
+  padding: 20px;
+}
+.cartHeader {
+  display: flex;
+}
+.cartImageDiv {
+  width: 20%;
+}
+.cartItemDetailsDiv {
+  margin-left: 10px;
+}
+.cartContainer img {
+  width: 100%;
+}
+.cartBody {
+  display: flex;
+  height: 78%;
+  flex-direction: column;
+  overflow-y: scroll;
+  margin-bottom: 5px;
+}
+.cartItemContainer {
+  display: flex;
+  width: 100%;
+  height: 50px;
+}
+.cartLeftSide {
+  display: flex;
+  width: 50%;
+  align-items: center;
+}
+.cartIconDiv {
+  width: 20px;
+  margin: 0 10px;
+}
+.cartRightSide {
+  display: flex;
+  align-items: center;
+  width: 50%;
+  justify-content: space-around;
+}
+.cartBillDetails {
+  height: 20%;
+}
+.cartBillDetails div {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+.cartButton {
+  background: transparent;
+  padding: 5px 10px;
+  outline: none;
+  color: green;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 500;
+  border: 1px solid rgba(0, 0, 0, 0.363);
+  display: flex;
+}
+.cartButton > div {
+  margin: 5px 5px;
+}
+.cartRemove {
+  cursor: pointer;
+  font-weight: 900;
+}
+.cartAdd {
+  cursor: pointer;
+  font-weight: 900;
+}
+.cartButton:hover {
+  background-color: white;
+  box-shadow: 0 0 1px black;
+}
+.cartFooter {
+  display: flex;
+  justify-content: space-between;
+}
+.cartAmount {
+  background-color: orange;
+  padding: 5px 15px;
+  cursor: pointer;
+}
+.cartAmount:hover {
+  box-shadow: 0 0 2px black;
+}

@@ -1,0 +1,38 @@
+.body {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.searchSection {
+  width: 40%;
+  margin: 120px auto 0px;
+}
+.searchDiv {
+  position: relative;
+  box-shadow: 0 0 2px rgb(0, 0, 0);
+  width: 90%;
+  padding: 1%;
+  margin: 0 auto;
+  border-radius: 20px;
+  display: flex;
+}
+input {
+  border: none;
+  outline: none;
+  margin-left: 2%;
+  width: 100%;
+  border-radius: 10px;
+  font-size: 14pt;
+  color: black;
+  background-color: #fefae0;
+}
+@media (max-width: 500px) {
+  .searchSection {
+    width: 70%;
+    margin: 100px auto 0px;
+  }
+  input{
+    font-size: 1rem;
+  }
+}

@@ -1,0 +1,18 @@
+.shimmerContainer {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 70px auto 0;
+}
+.shimmerCard {
+  width: 25%;
+  background-color: rgba(232, 226, 226, 0.79);
+  padding: 2%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 1%;
+  height: 300px;
+}

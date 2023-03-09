@@ -1,0 +1,42 @@
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.confirmationContainerCover {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 30%;
+  background-color: blue;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: "Poppins", sans-serif;
+  background-color: white;
+}
+.confirmationContainer {
+  width: 100%;
+  min-width: 350px;
+  height: 500px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.nearYou {
+  margin-top: 20px;
+  padding: 10px;
+  background-color: rgb(206, 69, 19);
+  color: white;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+}
