@@ -13,9 +13,11 @@
 }
 .cartContainer {
   background-color: white;
-  width: 500px;
+  /* width: 500px; */
   height: 500px;
   padding: 20px;
+  border: 1px solid black;
+  border-radius: 10px;
 }
 .cartHeader {
   display: flex;
@@ -100,4 +102,9 @@
 }
 .cartAmount:hover {
   box-shadow: 0 0 2px black;
+}
+@media (max-width: 500px) {
+  .cartContainer {
+    width: 90%;
+  }
 }

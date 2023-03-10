@@ -54,15 +54,13 @@ const MenuCard = ({ item, restaurant }) => {
             </div>
             <div className={style.itemImageDiv}>
               <img src={CimgID + item.cloudinaryImageId} alt="" />
-              <div className={style.button}>
-                <div
-                  className={style.text}
-                  onClick={() => {
-                    add(item, restaurant);
-                  }}
-                >
-                  {isAdded()}
-                </div>
+              <div
+                className={style.button}
+                onClick={() => {
+                  add(item, restaurant);
+                }}
+              >
+                <div className={style.text}>{isAdded()}</div>
               </div>
             </div>
           </div>

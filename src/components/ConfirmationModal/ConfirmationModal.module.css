@@ -4,7 +4,7 @@
   bottom: 0;
   left: 0;
   right: 0;
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(0, 0, 0, 0.9);
 }
 
 .confirmationContainerCover {
@@ -12,7 +12,6 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 30%;
   background-color: blue;
   display: flex;
   flex-direction: column;
@@ -22,9 +21,8 @@
   background-color: white;
 }
 .confirmationContainer {
-  width: 100%;
   min-width: 350px;
-  height: 500px;
+  height: 300px;
   background-color: white;
   display: flex;
   flex-direction: column;

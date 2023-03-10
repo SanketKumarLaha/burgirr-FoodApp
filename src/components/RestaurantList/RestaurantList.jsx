@@ -11,12 +11,10 @@ const RestaurantList = ({ searchedData }) => {
   const location = useLoc();
   // const location = useLocation();
 
-
   useEffect(() => {
     callApiForRestaurants();
   }, [location]);
   async function callApiForRestaurants() {
-    // "https://corsanywhere.herokuapp.com/https://www.swiggy.com/dapi/restaurants/list/v5?lat=21.1702401&lng=72.83106070000001&page_type=DESKTOP_WEB_LISTING";
     try {
       const response = await fetch(
         `https://corsanywhere.herokuapp.com/https://www.swiggy.com/dapi/restaurants/list/v5?lat=${location.latitude}&lng=${location.longitude}&page_type=DESKTOP_WEB_LISTING`
@@ -38,6 +36,7 @@ const RestaurantList = ({ searchedData }) => {
       );
   }, [searchedData]);
 
+  console.log(data);
   return !data ? (
     <ShimmerRestaurantList />
   ) : (

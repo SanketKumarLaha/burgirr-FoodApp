@@ -6,13 +6,16 @@
   flex-direction: column;
   align-items: center;
   margin: 1%;
+  border-radius: 10px;
+  box-shadow: 0 0 1px black;
 }
 .cardContainer:hover {
-  box-shadow: 0 0 1px black;
+  box-shadow: 0 0 2px black;
 }
 .cardContainerHeader img {
   width: 100%;
   max-width: 400px;
+  border-radius: 5px;
 }
 .cardContainerHeader {
   width: 100%;
@@ -55,7 +58,7 @@
   text-decoration: none;
   color: black;
 }
-@media screen and (max-width: 1100px) {
+@media screen and (max-width: 500px) {
   .cardContainer {
     max-width: 90%;
   }

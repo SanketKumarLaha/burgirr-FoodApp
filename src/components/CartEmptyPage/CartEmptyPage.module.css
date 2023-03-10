@@ -9,7 +9,7 @@
 }
 .container {
   width: 40%;
-  height: 500px;
+  /* height: 500px; */
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -36,11 +36,16 @@
   max-width: 40%;
 }
 .nearYou {
-  margin-top: 20px;
+  /* margin-top: 20px; */
   padding: 10px;
   background-color: rgb(206, 69, 19);
   color: white;
   display: flex;
   justify-content: center;
   cursor: pointer;
+}
+@media (max-width:500px) {
+  .container {
+    width: 90%;
+  }
 }
