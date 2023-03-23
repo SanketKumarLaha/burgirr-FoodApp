@@ -21,24 +21,48 @@
   display: flex;
   padding: 2rem;
 }
-.shimmerImageDiv {
-  margin-right: 5rem;
+.shimmerInnerDiv {
   width: 100%;
-  max-width: 300px;
   display: flex;
   align-items: center;
   background-color: rgba(232, 226, 226, 0.2);
 }
-.shimmerDetailsDiv {
-  width: 70%;
-  background-color: rgba(232, 226, 226, 0.2);
-}
+
 .shimmerMenuContainer {
   width: 35%;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.5);
   margin: 0 auto;
 }
 .shimmerMenuItems {
-  width: 70%;
+  /* width: 70%;
+  height: 200px; */
+  width: 600px;
   height: 200px;
+  box-shadow: 0 0 1px black;
+  margin: 5px;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+@media (max-width: 1000px) {
+  .shimmerHeaderContainer {
+    width: 100%;
+  }
+  .shimmerInnerDiv {
+    background-color: black;
+  }
+  .shimmerImageDiv {
+    margin-right: 0;
+  }
+  .shimmerMenuContainer {
+    width: 100%;
+    margin: 0;
+  }
+  .shimmerMenuItems {
+    width: 96%;
+    max-width: 600px;
+    height: 200px;
+    box-shadow: 0 0 1px black;
+    margin: 5px auto;
+    border-radius: 10px;
+  }
 }

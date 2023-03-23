@@ -1,17 +1,3 @@
-.cardContainer {
-  max-width: 25%;
-  background-color: white;
-  padding: 2%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 1%;
-  border-radius: 10px;
-  box-shadow: 0 0 1px black;
-}
-.cardContainer:hover {
-  box-shadow: 0 0 2px black;
-}
 .cardContainerHeader img {
   width: 100%;
   max-width: 400px;
@@ -57,9 +43,22 @@
 .cardLinkStyle {
   text-decoration: none;
   color: black;
+  max-width: 25%;
+  background-color: white;
+  padding: 2%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 1%;
+  border-radius: 10px;
+  box-shadow: 0 0 1px black;
 }
-@media screen and (max-width: 500px) {
-  .cardContainer {
+.cardLinkStyle:hover {
+  box-shadow: 0 0 2px black;
+}
+@media screen and (max-width: 1000px) {
+  .cardLinkStyle {
     max-width: 90%;
+    width: 300px;
   }
 }

@@ -27,12 +27,12 @@ input {
   color: black;
   background-color: #fefae0;
 }
-@media (max-width: 500px) {
+@media (max-width: 1000px) {
   .searchSection {
     width: 70%;
     margin: 100px auto 0px;
   }
-  input{
+  input {
     font-size: 1rem;
   }
 }

@@ -8,6 +8,7 @@ import {
   decreaseItem,
   totalCost,
 } from "../../assets/reduxStore/CartSlice";
+import { resetRestaurant } from "../../assets/reduxStore/RestaurantSlice";
 import ConfirmationModal from "../../components/ConfirmationModal/ConfirmationModal";
 
 const Cart = () => {
@@ -24,6 +25,7 @@ const Cart = () => {
   };
 
   useEffect(() => {
+    if (!cart.items.length) dispatch(resetRestaurant());
     dispatch(totalCost());
   }, [cart]);
 

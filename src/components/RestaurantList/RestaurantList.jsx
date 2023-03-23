@@ -2,17 +2,14 @@ import React, { useEffect, useState } from "react";
 import ShimmerRestaurantList from "../ShimmerRestaurantList/ShimmerRestaurantList";
 import Card from "../Card/Card";
 import styles from "./RestaurantList.module.css";
-import { useLocation } from "../../assets/hooks/useLocation";
-import { useLoc } from "../../assets/context/LocationProvider";
+import { useLocation } from "../../assets/context/LocationProvider";
 
 const RestaurantList = ({ searchedData }) => {
   const [data, setData] = useState([]);
   const [filterData, setFilterData] = useState([]);
-  const location = useLoc();
-  // const location = useLocation();
-
+  const location = useLocation();
   useEffect(() => {
-    callApiForRestaurants();
+    if (location.latitude && location.longitude) callApiForRestaurants();
   }, [location]);
   async function callApiForRestaurants() {
     try {
@@ -35,14 +32,12 @@ const RestaurantList = ({ searchedData }) => {
         )
       );
   }, [searchedData]);
-
-  console.log(data);
   return !data ? (
     <ShimmerRestaurantList />
   ) : (
     <div className={styles.allCards}>
       {filterData.map((item, index) => (
-        <Card key={index} {...item.data} item={item} location={location} />
+        <Card key={item.data.id} {...item.data} />
       ))}
     </div>
   );

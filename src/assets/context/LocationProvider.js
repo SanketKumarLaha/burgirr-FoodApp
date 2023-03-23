@@ -2,7 +2,7 @@ import { createContext, useContext, useState, useEffect } from "react";
 
 export const LocationContext = createContext();
 
-export const useLoc = () => {
+export const useLocation = () => {
   return useContext(LocationContext);
 };
 
@@ -14,22 +14,26 @@ const LocationProvider = ({ children }) => {
   useEffect(() => {
     callApiForLocation();
   }, []);
-
-  async function callApiForLocation() {
+  const callApiForLocation = async () => {
     const success = (position) => {
       setLocation({
         latitude: position.coords.latitude,
         longitude: position.coords.longitude,
       });
+      console.log("success");
     };
-    const error = (errorObj) => {
-      alert(errorObj.code + ": " + errorObj.message);
+    const error = (error) => {
+      console.log(error);
     };
-    navigator.geolocation.getCurrentPosition(success, error, {
-      enableHighAccuracy: true,
-      maximumAge: 10000,
-    });
-  }
+    if (!navigator.geolocation) {
+      alert("Geolocation is not supported by the device");
+    } else {
+      navigator.geolocation.getCurrentPosition(success, error, {
+        enableHighAccuracy: true,
+        timeout: 10000,
+      });
+    }
+  };
   return (
     <LocationContext.Provider value={location}>
       {children}

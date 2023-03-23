@@ -13,7 +13,6 @@ const CartEmptyPage = () => {
           />
         </div>
         <h2>Your cart is empty</h2>
-        {/* <h4>You can go to home page to view more restaurants</h4> */}
         <Link to="/" style={{ textDecoration: "none" }}>
           <div className={styles.nearYou}>SEE RESTAURANTS NEAR YOU</div>
         </Link>

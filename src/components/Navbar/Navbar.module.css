@@ -3,9 +3,6 @@
   list-style: none;
   padding: 0;
 }
-.navbar li {
-  /* margin: 0 15% 0 0; */
-}
 .navbar a {
   color: white;
   display: flex;
@@ -27,11 +24,8 @@
   margin: 0 auto;
   align-items: center;
   height: 70px;
-  /* background-color: pink; */
 }
-.navbarContent div {
-  /* width: 40%; */
-}
+
 #logo {
   color: white;
 }
@@ -49,7 +43,7 @@
   width: 100%;
   justify-content: end;
 }
-.home{
+.home {
   margin-right: 25%;
 }
 .Link {
@@ -66,14 +60,14 @@
   justify-content: center;
   color: white;
 }
-@media (max-width: 500px) {
+@media (max-width: 1000px) {
   .navbarContent {
     width: 95%;
   }
   .logoSection li {
     margin: 0 5% 0 0;
   }
-  .home{
+  .home {
     margin-right: 10%;
   }
 }

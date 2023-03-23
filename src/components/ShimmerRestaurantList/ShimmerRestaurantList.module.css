@@ -16,3 +16,8 @@
   margin: 1%;
   height: 300px;
 }
+@media (max-width: 1000px) {
+  .shimmerCard {
+    width: 90%;
+  }
+}

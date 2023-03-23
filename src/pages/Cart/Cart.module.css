@@ -4,6 +4,8 @@
 }
 .cartContainerCover {
   width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -13,7 +15,6 @@
 }
 .cartContainer {
   background-color: white;
-  /* width: 500px; */
   height: 500px;
   padding: 20px;
   border: 1px solid black;
@@ -106,5 +107,17 @@
 @media (max-width: 500px) {
   .cartContainer {
     width: 90%;
+  }
+  .cartItemContainer {
+    margin: 10px;
+  }
+  .cartIconDiv {
+    margin: 0;
+  }
+  .cartLeftSide h4 {
+    font-size: x-small;
+  }
+  .cartButton {
+    padding: 0;
   }
 }

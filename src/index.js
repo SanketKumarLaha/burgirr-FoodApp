@@ -4,7 +4,7 @@ import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
 import { Provider } from "react-redux";
 import Navbar from "./components/Navbar/Navbar";
 import Home from "./pages/Home/Home";
-import Restaurant from "./components/Restaurant/Restaurant";
+import Restaurant from "./pages/Restaurant/Restaurant";
 import Cart from "./pages/Cart/Cart";
 import store from "./assets/reduxStore/store";
 import "./style.css";

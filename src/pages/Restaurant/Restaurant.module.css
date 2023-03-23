@@ -78,9 +78,14 @@
   box-shadow: 0 0 1px black;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 1000px) {
   .imageDiv {
     margin: 0;
+    max-width: 100%;
+  }
+  .imageDiv img {
+    max-width: 600px;
+    margin: 0 auto;
   }
   .restaurantHeaderContainer {
     width: 100%;
@@ -90,8 +95,11 @@
     padding: 1rem;
     flex-direction: column;
   }
-  .imageDiv img {
-    max-width: 350px;
+
+  .restaurantDetailsDiv {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
   }
   .restaurantDetailsDiv h3 {
     margin: 0;
