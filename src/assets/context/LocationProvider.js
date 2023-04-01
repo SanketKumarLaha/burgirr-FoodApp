@@ -23,7 +23,7 @@ const LocationProvider = ({ children }) => {
       console.log("success");
     };
     const error = (error) => {
-      console.log(error);
+      alert(error.message);
     };
     if (!navigator.geolocation) {
       alert("Geolocation is not supported by the device");
