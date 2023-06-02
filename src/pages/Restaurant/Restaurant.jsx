@@ -26,7 +26,7 @@ const Restaurant = () => {
   async function callMenuApi() {
     try {
       const response = await fetch(
-        `https://corsanywhere.herokuapp.com/https://www.swiggy.com/dapi/menu/pl?page-type=REGULAR_MENU&complete-menu=true&lat=${location.latitude}&lng=${location.longitude}&&submitAction=ENTER&restaurantId=${id}`
+        `https://corsproxy.io/?https://www.swiggy.com/dapi/menu/pl?page-type=REGULAR_MENU&complete-menu=true&lat=${location.latitude}&lng=${location.longitude}&&submitAction=ENTER&restaurantId=${id}`
       );
       const json = await response.json();
 

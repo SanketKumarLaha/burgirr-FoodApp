@@ -14,7 +14,7 @@ const RestaurantList = ({ searchedData }) => {
   async function callApiForRestaurants() {
     try {
       const response = await fetch(
-        `https://corsanywhere.herokuapp.com/https://www.swiggy.com/dapi/restaurants/list/v5?lat=${location.latitude}&lng=${location.longitude}&page_type=DESKTOP_WEB_LISTING`
+        `https://corsproxy.io/?https://www.swiggy.com/dapi/restaurants/list/v5?lat=${location.latitude}&lng=${location.longitude}&page_type=DESKTOP_WEB_LISTING`
       );
       const jsonData = await response.json();
       setData(jsonData?.data?.cards[2]?.data?.data?.cards);
@@ -23,6 +23,7 @@ const RestaurantList = ({ searchedData }) => {
       console.log(error);
     }
   }
+  console.log(location);
   useEffect(() => {
     if (searchedData === "") setFilterData(data);
     else
